@@ -3,8 +3,8 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
 import '@/styles/global.css'
 interface Props {
     title: string;
-    description: string;
-    image: string;
+    description?: string;
+    image?: string;
 }
 const {title, description='Nuestro blog de astro', image = '/assets/imagen-post-1.png'} = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
